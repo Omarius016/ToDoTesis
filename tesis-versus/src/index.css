@@ -1,0 +1,29 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  
+  /* Forzar colores claros */
+  color: #213547;
+  background-color: #ffffff;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  min-height: 100vh;
+  background-color: #ffffff; /* Asegura fondo blanco */
+}
+
+#root {
+  width: 100%;
+  max-width: 700px; /* Ancho máximo para que se vea elegante */
+  padding: 2rem;
+  text-align: center; /* Centra los textos como el título */
+}
+
+/* Un pequeño arreglo para que tus inputs no se vean raros con el fondo blanco */
+input, select, button {
+  font-family: inherit;
+}
