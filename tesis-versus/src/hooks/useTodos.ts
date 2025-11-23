@@ -1,6 +1,5 @@
 import { useState } from 'react';
 
-// Definimos cómo se ve una Tarea
 export interface Todo {
   id: number;
   text: string;
@@ -8,10 +7,8 @@ export interface Todo {
 }
 
 export const useTodos = () => {
-  const [todos, setTodos] = useState<Todo[]>([
-    { id: 1, text: 'Probar componentes Prisma', completed: false },
-    { id: 2, text: 'Verificar contraste en Protanopia', completed: true },
-  ]);
+  // INICIO VACÍO: Sin tareas predeterminadas
+  const [todos, setTodos] = useState<Todo[]>([]);
 
   const addTodo = (text: string) => {
     if (!text.trim()) return;

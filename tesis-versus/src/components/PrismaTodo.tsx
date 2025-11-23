@@ -75,7 +75,7 @@ export const PrismaTodo = ({ todos, onAdd, onToggle, onDelete, visionMode }: Pro
 
             <Button 
               variant="danger" 
-              size="sm" // Usamos tamaño pequeño si tu librería lo tiene
+              //size="sm" // Usamos tamaño pequeño si tu librería lo tiene
               onClick={() => onDelete(todo.id)}
               colorVision={visionMode}
             >
