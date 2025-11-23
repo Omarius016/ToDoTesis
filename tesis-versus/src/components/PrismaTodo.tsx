@@ -53,7 +53,7 @@ export const PrismaTodo = ({ todos, onAdd, onToggle, onDelete, visionMode }: Pro
               display: 'flex', 
               alignItems: 'center', 
               justifyContent: 'space-between',
-              padding: '10px',
+              padding: '1px',
               borderBottom: '1px solid #eee'
             }}
           >
