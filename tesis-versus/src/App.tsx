@@ -20,10 +20,27 @@ function App() {
 
   return (
     <div className="app-container"> 
-      <h1 style={{ marginBottom: '30px', fontSize: '2.5rem', color: '#333' }}>
+      <h1 style={{ 
+        display: 'flex',
+        alignItems: 'center',     // Centra verticalmente logo y texto
+        justifyContent: 'center', // Centra todo el bloque en la página
+        gap: '20px',              // Espacio entre la imagen y el texto
+        marginBottom: '30px', 
+        fontSize: '2.5rem', 
+        color: '#333' 
+      }}>
+        <img 
+          src="PrismaIcon.png"
+          alt="To Do Prisma Logo" 
+          style={{ 
+            height: '60px', 
+            width: 'auto', 
+            objectFit: 'contain'
+          }} 
+        />
+        
         To Do Prisma
       </h1>
-
       {/* CONTROLADOR DE VISIÓN */}
       <div style={{ 
         marginBottom: '30px', 
@@ -38,7 +55,7 @@ function App() {
         </label>
         
         {/* Largo del select*/}
-        <div style={{ maxWidth: '600px' }}>
+        <div style={{ width: '100%', maxWidth: '600px' }}>
           <Select 
             variant="primary"
             options={visionOptions}
@@ -48,9 +65,8 @@ function App() {
                const val = e.target ? e.target.value : e;
                setVisionMode(val as VisionMode);
             }}
-            // --- CORRECCIÓN DE COLOR --- 
-            // Ahora el Select también reacciona a la discapacidad seleccionada
             colorVision={visionMode} 
+            style={{ width: '100%' }} 
           />
         </div>
       </div>
